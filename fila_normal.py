@@ -1,7 +1,10 @@
+from typing import List
+
+
 class FilaNormal:
     codigo: int = 0
-    fila = []
-    clintesatendidos = []
+    fila: List[str] = []
+    clintesatendidos: List[str] = []
     senhaatual: str = ''
 
     def gerasenhaatual(self) -> None:
