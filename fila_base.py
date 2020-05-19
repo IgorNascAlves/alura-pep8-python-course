@@ -1,17 +1,19 @@
 from abc import ABCMeta, abstractmethod
 from typing import List
 
+from constantes import TAMANHO_MAXIMO, TAMANHO_MINIMO
+
 
 class FilaBase(metaclass=ABCMeta):
     def __init__(self):
-        self.codigo: int = 0
+        self.codigo: int = TAMANHO_MINIMO
         self.fila: List[str] = []
         self.clientes_atendidos: List[str] = []
         self.senha_atual: str = ""
 
     def reseta_fila(self) -> None:
-        if self.codigo >= 100:
-            self.codigo = 0
+        if self.codigo >= TAMANHO_MAXIMO:
+            self.codigo = TAMANHO_MINIMO
         else:
             self.codigo += 1
 
