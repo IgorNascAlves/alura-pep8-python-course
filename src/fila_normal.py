@@ -1,6 +1,5 @@
-from fila_base import FilaBase
-
-from constantes import SENHA_FILA_NORMAL
+from src.fila_base import FilaBase
+from src.constantes import SENHA_FILA_NORMAL
 
 
 class FilaNormal(FilaBase):

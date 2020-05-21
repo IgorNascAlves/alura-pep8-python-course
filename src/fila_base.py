@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractmethod
 from typing import List
 
-from constantes import TAMANHO_MAXIMO, TAMANHO_MINIMO
+from src.constantes import TAMANHO_MAXIMO, TAMANHO_MINIMO
 
 
 class FilaBase(metaclass=ABCMeta):
